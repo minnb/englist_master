@@ -1,0 +1,67 @@
+{
+  "resources/images/about/comment.png": {
+    "file": "icons/comment.png",
+    "src": "resources/images/about/comment.png"
+  },
+  "resources/images/banner2/bg2.png": {
+    "file": "icons/bg2.png",
+    "src": "resources/images/banner2/bg2.png"
+  },
+  "resources/images/blog-grid/link.png": {
+    "file": "icons/link.png",
+    "src": "resources/images/blog-grid/link.png"
+  },
+  "resources/images/blog-grid/qu.png": {
+    "file": "icons/qu.png",
+    "src": "resources/images/blog-grid/qu.png"
+  },
+  "resources/images/campus/cam.png": {
+    "file": "icons/cam.png",
+    "src": "resources/images/campus/cam.png"
+  },
+  "resources/images/cta.jpg": {
+    "file": "icons/cta.jpg",
+    "src": "resources/images/cta.jpg"
+  },
+  "resources/images/hero/01.png": {
+    "file": "icons/01.png",
+    "src": "resources/images/hero/01.png"
+  },
+  "resources/images/home4/backdrop.png": {
+    "file": "icons/backdrop.png",
+    "src": "resources/images/home4/backdrop.png"
+  },
+  "resources/images/home5/banner-bg.png": {
+    "file": "icons/banner-bg.png",
+    "src": "resources/images/home5/banner-bg.png"
+  },
+  "resources/images/home5/pricing-bg.png": {
+    "file": "icons/pricing-bg.png",
+    "src": "resources/images/home5/pricing-bg.png"
+  },
+  "resources/images/home6/events/events-bg.png": {
+    "file": "icons/events-bg.png",
+    "src": "resources/images/home6/events/events-bg.png"
+  },
+  "resources/images/home6/video-bg.png": {
+    "file": "icons/video-bg.png",
+    "src": "resources/images/home6/video-bg.png"
+  },
+  "resources/images/login/1.jpg": {
+    "file": "icons/1.jpg",
+    "src": "resources/images/login/1.jpg"
+  },
+  "resources/images/testimonial/bg.jpg": {
+    "file": "icons/bg.jpg",
+    "src": "resources/images/testimonial/bg.jpg"
+  },
+  "resources/images/testimonial/bg3.png": {
+    "file": "icons/bg3.png",
+    "src": "resources/images/testimonial/bg3.png"
+  },
+  "resources/less/style.less": {
+    "file": "css/style.css",
+    "src": "resources/less/style.less",
+    "isEntry": true
+  }
+}
