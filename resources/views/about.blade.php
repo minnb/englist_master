@@ -1,7 +1,5 @@
-@extends('layouts.app')
-@section('title')
-    About Us
-@endsection
+@extends('layouts.master')
+@section('title') About English Master @endsection
 @section('content')
     <!--================= Wrapper Start Here =================-->
     <div class="react-wrapper">
@@ -9,15 +7,15 @@
             <!--================= Breadcrumbs Section Start Here =================-->
             <div class="react-breadcrumbs">
                 <div class="breadcrumbs-wrap">
-                    <img class="desktop" src="{{ URL::asset('build/images/breadcrumbs/1.jpg') }}" alt="Breadcrumbs">
-                    <img class="mobile" src="{{ URL::asset('build/images/breadcrumbs/1.jpg') }}" alt="Breadcrumbs">
+                    <img class="desktop" src="{{ URL::asset('build/images/about/1.png') }}" alt="Breadcrumbs">
+                    <img class="mobile" src="{{ URL::asset('build/images/about/1.png') }}" alt="Breadcrumbs">
                     <div class="breadcrumbs-inner">
                         <div class="container">
                             <div class="breadcrumbs-text">
                                 <h1 class="breadcrumbs-title">About Us</h1>
                                 <div class="back-nav">
                                     <ul>
-                                        <li><a href="{{ url('index') }}">Home</a></li>
+                                        <li><a href="{{ url('/') }}">Home</a></li>
                                         <li>About Us</li>
                                     </ul>
                                 </div>
@@ -35,33 +33,22 @@
                         <div class="col-lg-6">
                             <div class="about__image">
                                 <img src="{{ URL::asset('build/images/about/ab.png') }}" alt="About">
-                                <img class="react__shape__ab" src="{{ URL::asset('build/images/about/badge.png') }}" alt="Shape Image">
+                                <img class="react__shape__ab" src="{{ URL::asset('build/images/preload.png') }}" alt="Shape Image">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="about__content">
-                                <h2 class="about__title">Welcome to <br> <em>Echooling LMS Platform</em></h2>
-                                <p class="about__paragraph">Education is both the act of teaching knowledge to others
-                                    and<br> the act of receiving knowledge from someone else.</p>
-                                <p class="about__paragraph2"> Have questions? <a href="javascript:void(0);"> Get Free Guide </a></p>
-                                <p>Education also refers to the knowledge received through schooling instruction <br>and to
-                                    the institution of teaching as a whole. The main purpose of education <br>is the
-                                    integral development of a person.</p>
-                                <ul>
-                                    <li><a href="{{ url('about') }}" class="more-about"> Read More <svg
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
-                                            </svg></a></li>
-                                    <li class="last-li">
-                                        <em>Get Support</em>
-                                        <a href="mailto:support@react.com">support@react.com</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <h2 class="about__title">Welcome to <br> <em>English Master Academy</em></h2>
+                                    <p class="about__paragraph">Education is both the act of teaching knowledge to others and<br> the act of receiving knowledge from someone else.</p>
+                                    <p class="about__paragraph2"> At English Master Academy, we believe that mastering the English language opens doors to new opportunities, enhances communication skills, and empowers individuals to achieve their personal and professional goals. Whether you are a beginner looking to build a strong foundation or an advanced learner aiming to refine your fluency, our dedicated team is here to guide you on your journey</p>
+                                    <ul>
+                                        <li><a href="about.html" class="more-about"> Connect with Our Expert <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+                                        <li class="last-li">
+                                            <em>Get Support</em>
+                                            <a href="mailto:support@react.com">support@react.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -73,7 +60,7 @@
                 <div class="react__title__section react__title__section-all">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h6>Echooling available courses</h6>
+                            <h6>English Master available courses</h6>
                             <h2 class="react__tittle"> Online Coaching Lessons For <br>Remote Learning </h2>
                         </div>
                     </div>
@@ -142,101 +129,7 @@
             </div>
             <!--=================  Popular Topics Section End Here ================= -->
 
-            <!--================= Instructor Section Start Here =================-->
-            <div class="instructor__area pt---0 pb---110 text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-4 col-sm-6">
-                            <div class="instructor__content instructor__content-one">
-                                <div class="instructors_lefts">
-                                    <h6>Course Instructors</h6>
-                                    <h2>Meet our <br> Class Instructors</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="instructor__content">
-                                <div class="instructor__content-1">
-                                    <img src="{{ URL::asset('build/images/instructor/03.jpg') }}" alt="course instructor picture">
-                                </div>
-                                <div class="instructor__content-2">
-                                    <h4>
-                                        <a href="{{ url('profile') }}">Jason Response</a>
-                                    </h4>
-                                    <p>Education Assistant</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="instructor__content">
-                                <div class="instructor__content-1">
-                                    <img src="{{ URL::asset('build/images/instructor/04.jpg') }}" alt="course instructor picture">
-                                </div>
-                                <div class="instructor__content-2">
-                                    <h4>
-                                        <a href="{{ url('profile') }}">Jonquil Von</a>
-                                    </h4>
-                                    <p>Teaching Assistant</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="instructor__content">
-                                <div class="instructor__content-1">
-                                    <img src="{{ URL::asset('build/images/instructor/05.jpg') }}" alt="course instructor picture">
-                                </div>
-                                <div class="instructor__content-2">
-                                    <h4>
-                                        <a href="{{ url('profile') }}">Piff Jenkins</a>
-                                    </h4>
-                                    <p>Teacher</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="instructor__content">
-                                <div class="instructor__content-1">
-                                    <img src="{{ URL::asset('build/images/instructor/06.jpg') }}" alt="course instructor picture">
-                                </div>
-                                <div class="instructor__content-2">
-                                    <h4>
-                                        <a href="{{ url('profile') }}">Brian Cumin</a>
-                                    </h4>
-                                    <p>Lead Teacher</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="instructor__content">
-                                <div class="instructor__content-1">
-                                    <img src="{{ URL::asset('build/images/instructor/07.jpg') }}" alt="course instructor picture">
-                                </div>
-                                <div class="instructor__content-2">
-                                    <h4>
-                                        <a href="{{ url('profile') }}">Hanson Deck</a>
-                                    </h4>
-                                    <p>Teacher</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="instructor__content">
-                                <div class="instructor__content-1">
-                                    <img src="{{ URL::asset('build/images/instructor/08.jpg') }}" alt="course instructor picture">
-                                </div>
-                                <div class="instructor__content-2">
-                                    <h4>
-                                        <a href="{{ url('profile') }}">Alan Fresco</a>
-                                    </h4>
-                                    <p>Teacher</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--================= Instructor Section End Here =================-->
-
+          
             <!--=================  Satisfaction Section Start Here ================= -->
             <div class="student_satisfaction-section pt---110 pb---120">
                 <div class="container">

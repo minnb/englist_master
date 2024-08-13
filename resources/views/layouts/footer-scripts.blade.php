@@ -23,6 +23,13 @@
 <script src="build/js/waypoints.min.js"></script>
 <!--================= Wow js =================-->
 <script src="build/js/wow.min.js"></script>
+
+        <script src="build/js/isotope.pkgd.min.js"></script>
+        <!--================= Imagesloaded.pkgd.min js =================-->
+        <script src="build/js/imagesloaded.pkgd.min.js"></script> 
+        <!--================= skill.bars.jquery.js =================-->
+        <script src="build/js/skill.bars.jquery.js"></script>    
+        
 <!--================= menus js =================-->
 <script src="build/js/menus.js"></script>
 <!--================= Plugins js =================-->

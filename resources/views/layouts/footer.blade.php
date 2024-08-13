@@ -6,7 +6,7 @@
                 <div class="col-lg-3 md-mb-30">
                     <div class="footer-widget footer-widget-1">
                         <div class="footer-logo white">
-                            <a href="{{ url('index') }}" class="logo-text"> <img src="{{ URL::asset('build/images/footer-logo2.png') }}" alt="logo"></a>
+                            <a href="{{ url('/') }}" class="logo-text"> <img src="{{ URL::asset('build/images/footer-logo2.png') }}" alt="logo"></a>
                         </div>
                         <h5 class="footer-subtitle">Best Online English Courses To Improve Your Communication<br></h5>
                         <ul class="footer-address">
@@ -21,7 +21,7 @@
                         <div class="footer-menu">
                             <ul>
                                 <li><a href="{{ url('about') }}">About</a></li>
-                                <li><a href="{{ url('coureses-grid') }}">Courses</a></li>
+                                <li><a href="{{ url('coureses') }}">Courses</a></li>
                                 <li><a href="javascript:void(0);">Events</a></li>
                                 <li><a href="{{ url('contact') }}">Contact</a></li>
                             </ul>
