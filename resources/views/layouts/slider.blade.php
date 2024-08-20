@@ -29,8 +29,8 @@
                         </div>
                         <div class="single-slide">
                             <div class="slider-img">
-                                <img class="desktop" src="build/images/slider/2.jpg" alt="Slider Image 1">
-                                <img class="mobile" src="build/images/slider/12.jpg" alt="Slider Image 1">
+                                <img class="desktop" src="build/images/slider/2.jpg" alt="English master">
+                                <img class="mobile" src="build/images/slider/2.jpg" alt="English master">
                             </div>
                             <div class="container">
                                 <div class="slider-content">
