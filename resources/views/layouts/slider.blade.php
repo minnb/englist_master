@@ -3,8 +3,8 @@
                     <div class="home-sliders home2 owl-carousel">
                         <div class="single-slide">
                             <div class="slider-img">
-                                <img class="desktop" src="build/images/slider/1.jpg" alt="Slider Image 1">
-                                <img class="mobile" src="build/images/slider/11.jpg" alt="Slider Image 1">
+                                <img class="desktop" src="build/images/slider/1.jpg" alt="English master">
+                                <img class="mobile" src="build/images/slider/1.jpg" alt="English master">
                             </div>
                             <div class="container">
                                 <div class="slider-content">
