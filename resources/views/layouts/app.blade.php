@@ -4,7 +4,7 @@
 <head>
     <!--================= Meta tag =================-->
     <meta charset="utf-8">
-    <title>@yield('title') | Echooling - Online Education Laravel 10 Template</title>
+    <title>@yield('title') | English Master Academy</title>
     <meta name="description" content="">
     <!--================= Responsive Tag =================-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
