@@ -61,7 +61,14 @@
                      <!--================= Menu Structure =================-->
                      <div class="react-inner-menus">
                          <ul id="backmenu" class="react-menus home react-sub-shadow">
+                            <?php
+                                $currentRouteName = Route::currentRouteName();
+                            ?>
+                           @if (Route::currentRouteName() === '')
                              <li> <a href="javascript:void(0);">Home</a></li>
+                            @else
+                                <li> <a href="{{ url('/') }}">Home</a></li>
+                            @endif
                              <li> <a href="{{ url('about') }}">About</a></li>
                              <li> <a href="{{ url('coureses') }}">Courses</a>
                                  <ul>

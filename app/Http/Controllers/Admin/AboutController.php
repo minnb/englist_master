@@ -5,21 +5,20 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Auth;
 
-class DashboardController extends Controller
+class AboutController extends Controller
 {
  	public function __construct()
     {
         $this->middleware('auth');
     }
 
-    public function index()
+    public function about()
     {
-    	return view('admin.index');
+    	return view('admin.page.about');
     }
-    public function getLogout()
+    public function post_about()
     {
-        Auth::logout();
-        return redirect('/');
+
     }
 
 }

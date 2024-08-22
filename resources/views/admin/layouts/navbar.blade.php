@@ -30,10 +30,7 @@
                     <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
                         <li class="divider"></li>
                         <li>
-                            <a href="#">
-                                <i class="ace-icon fa fa-power-off"></i>
-                                Logout
-                            </a>
+                            <a href="#"><i class="ace-icon fa fa-power-off"></i>Logout</a>
                         </li>
                     </ul>
                 </li>
