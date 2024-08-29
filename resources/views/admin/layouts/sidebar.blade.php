@@ -94,11 +94,36 @@
                         <i class="menu-icon fa fa-caret-right"></i>
                         About
                     </a>
-
+                    <b class="arrow"></b>
+                </li>
+                <li class="{{ getActiveCSS('get.dashboard.page') }}">
+                    <a href="{{ route('get.dashboard.page.choose') }}">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        Why Choose Us
+                    </a>
                     <b class="arrow"></b>
                 </li>
             </ul>
         </li>
+        <li class="{{ getRootCSS('dashboard.product') }}">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-book"></i>
+                <span class="menu-text"> Course </span>
+
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+            <b class="arrow"></b>
+            <ul class="submenu">
+                <li class="{{ getActiveCSS('get.dashboard.product') }}">
+                    <a href="{{ route('get.dashboard.product.list') }}">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        List
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
+
 
 
     </ul><!-- /.nav-list -->

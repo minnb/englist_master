@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
         </button>
         <div class="navbar-header pull-left">
-            <a href="index.html" class="navbar-brand">
+            <a href="{{url('dashboard')}}" class="navbar-brand">
                 <small>
                     <img class="img-fluid" src="{{ URL::asset('build/images/logo.png') }}" alt="English Master">
                 </small>

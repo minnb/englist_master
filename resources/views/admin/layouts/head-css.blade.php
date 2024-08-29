@@ -21,7 +21,16 @@
 <!-- inline styles related to this page -->
 <!-- ace settings handler -->
 <script src="{{ URL::asset('admin/js/ace-extra.min.js')}}"></script>
-
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<script src="{{ asset('js/script.js') }}"></script>
+<script type="text/javascript">
+    var baseURL = "{!! url('/') !!}";
+    window.setTimeout(function() {
+        $("#flash-message").fadeTo(800, 0).slideUp(800, function(){
+        $(this).remove();
+        });
+    }, 55000);
+</script>
 <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 <!--[if lte IE 8]>
 <script src="assets/js/html5shiv.min.js"></script>
