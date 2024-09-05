@@ -123,7 +123,24 @@
                 </li>
             </ul>
         </li>
+        <li class="{{ getRootCSS('dashboard.feedback') }}">
+            <a href="#" class="dropdown-toggle">
+                <i class="menu-icon fa fa-book"></i>
+                <span class="menu-text"> Feedback </span>
 
+                <b class="arrow fa fa-angle-down"></b>
+            </a>
+            <b class="arrow"></b>
+            <ul class="submenu">
+                <li class="{{ getActiveCSS('get.dashboard.feedback') }}">
+                    <a href="{{ route('get.dashboard.feedback.list') }}">
+                        <i class="menu-icon fa fa-caret-right"></i>
+                        List
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+            </ul>
+        </li>
 
 
     </ul><!-- /.nav-list -->

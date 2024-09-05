@@ -96,68 +96,18 @@
                 <div class="clearfix"></div>
             </div>
             <div id="Curriculum" class="tab-pane fade">
-                <ul class="ace-thumbnails clearfix">
-                    <li>
-                        <a href="assets/images/gallery/image-2.jpg" data-rel="colorbox">
-                            <img width="150" height="150" alt="150x150" src="{{ asset('assets/img/home/courses/course-1.jpg') }}" />
-                            <div class="text">
-                                <div class="inner">Sample Caption on Hover</div>
-                            </div>
-                        </a>
-                    </li>                                    
-                </ul>
+                <div class="form-group">
+                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Course Curriculum </label>
+                    <div class="col-xs-9">
+                        <textarea name="curriculum" id="description" rows="6" class="col-xs-9 col-sm-5">{{ old('curriculum')}}</textarea>
+                    </div>
+                </div>
             </div>
             <div id="Reviews" class="tab-pane fade">
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Trải nghiệm </label>
-                    <div class="col-xs-9">
-                        <textarea name="experience" id="experience" rows="6" class="col-xs-9 col-sm-5">{{ old('experience')}}</textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Dịch vụ</label>
-                    <div class="col-xs-9">
-                        <textarea name="service" id="service" rows="6" class="col-xs-9 col-sm-5">{{ old('service')}}</textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Chính sách</label>
-                    <div class="col-xs-9">
-                        <textarea name="policy" id="policy" rows="6" class="col-xs-9 col-sm-5">{{ old('policy')}}</textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Điều khoản</label>
-                    <div class="col-xs-9">
-                        <textarea name="rules" id="rules" rows="6" class="col-xs-9 col-sm-5">{{ old('rules')}}</textarea>
-                    </div>
-                </div>
+
             </div>
             <div id="FAQ" class="tab-pane fade">
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Trải nghiệm </label>
-                    <div class="col-xs-9">
-                        <textarea name="experience" id="experience" rows="6" class="col-xs-9 col-sm-5">{{ old('experience')}}</textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Dịch vụ</label>
-                    <div class="col-xs-9">
-                        <textarea name="service" id="service" rows="6" class="col-xs-9 col-sm-5">{{ old('service')}}</textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Chính sách</label>
-                    <div class="col-xs-9">
-                        <textarea name="policy" id="policy" rows="6" class="col-xs-9 col-sm-5">{{ old('policy')}}</textarea>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-xs-2 control-label no-padding-right" for="form-field-1"> Điều khoản</label>
-                    <div class="col-xs-9">
-                        <textarea name="rules" id="rules" rows="6" class="col-xs-9 col-sm-5">{{ old('rules')}}</textarea>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="clearfix form-actions">
@@ -218,6 +168,11 @@
     
     $(document).ready(function(){
         ckeditor('content')
+        $('.textarea').wysihtml5();
+    });
+    
+    $(document).ready(function(){
+        ckeditor('curriculum')
         $('.textarea').wysihtml5();
     });
 

@@ -27,4 +27,13 @@ Route::group(['prefix'=> 'dashboard'], function()
         Route::post('edit/{id}', ['as'=>'post.dashboard.product.edit','uses'=>'Admin\ProductController@post_edit'])->where('id', '[0-9]+');;
     });   
 
+    Route::group(['prefix'=> 'feedback'], function()
+    {
+        Route::get('list', ['as'=>'get.dashboard.feedback.list','uses'=>'Admin\FeedbackController@list']);
+        Route::get('create', ['as'=>'get.dashboard.feedback.create','uses'=>'Admin\FeedbackController@create']);
+        Route::post('create', ['as'=>'post.dashboard.feedback.create','uses'=>'Admin\FeedbackController@post_create']);
+        Route::get('edit/{id}', ['as'=>'get.dashboard.feedback.edit','uses'=>'Admin\FeedbackController@edit'])->where('id', '[0-9]+');;
+        Route::post('edit/{id}', ['as'=>'post.dashboard.feedback.edit','uses'=>'Admin\FeedbackController@post_edit'])->where('id', '[0-9]+');;
+    });  
+
 });
