@@ -2,7 +2,7 @@
         <div class="footer-inner">
             <div class="footer-content">
                 <span class="bigger-120">
-                    <span class="blue bolder">{{ config('app.name', 'Laravel') }}</span>
+                    <span class="blue bolder">{{ config('app.name', 'EnglisMaster') }}</span>
                     Application &copy; 2020
                 </span>
 

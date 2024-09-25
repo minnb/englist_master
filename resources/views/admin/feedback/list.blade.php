@@ -38,7 +38,7 @@
                         <td><a href="{{ route('get.dashboard.feedback.edit', ['id'=>$item->id]) }}">{{ $item->id }}</a></td>
                         <td><a href="{{ route('get.dashboard.feedback.edit', ['id'=>$item->id]) }}">{{ $item->name }}</a></td>
                         <td><a href="{{ route('get.dashboard.feedback.edit', ['id'=>$item->id]) }}">{!! $item->content !!}</a></td>
-                        <td>{{ $item->Thumbnail }}</td>
+                        <td><img src="{{asset($item->thumbnail)}}"></td>
                         <td>{{ $item->blocked }}</td>
                         <td>{{ $item->updated_at }}</td>
                         <td>

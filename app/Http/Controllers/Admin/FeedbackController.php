@@ -20,7 +20,7 @@ class FeedbackController extends Controller
     }
     public function create()
     {
-    	return view('admin.feeback.create');
+    	return view('admin.feedback.create');
     }
 
     public function post_create(Request $request)
@@ -28,9 +28,33 @@ class FeedbackController extends Controller
     	try
         {
             DB::beginTransaction();
+            $data = new Feedback();
+            $data->name = trim($request->name);
+            $data->position = trim($request->position);
+            $data->content = trim($request->content);
+            $data->star = $request->star;
+            $data->options = "{}";
+            $data->blocked = $request->blocked == 'on' ? 0 : 1;
+            $data->user_id = Auth::User()->id;
 
+            if($request->file('fileImage') && $request->hasFile('fileImage'))
+            {
+                $file = $request->file('fileImage');
+                $destinationPath = path_storage('avata');
+                if(isset($file)){
+                    $file_name = time().randomString().'.'.$file->getClientOriginalExtension();
+                    $file->move($destinationPath, $file_name);
+                    $data->thumbnail = $destinationPath.'/'.$file_name;
+                }
+            }
+            else
+            {
+                $data->thumbnail = "";
+            }
+
+            $data->save();
             DB::commit();
-            return redirect()->route('get.dashboard.feeback.list')->with(['flash_message'=>'Created success']);
+            return redirect()->route('get.dashboard.feedback.list')->with(['flash_message'=>'Add feedback success']);
         }
         catch (\Exception $e) 
         {
@@ -44,7 +68,7 @@ class FeedbackController extends Controller
         try
         {
             $data = Feedback::find($id);
-            return view('admin.feeback.edit', compact('data', 'id'));
+            return view('admin.feedback.edit', compact('data', 'id'));
         }
         catch (\Exception $e) 
         {
@@ -57,9 +81,34 @@ class FeedbackController extends Controller
     	try
         {
             DB::beginTransaction();
+            $data = Feedback::find($id);
+            $data->name = trim($request->name);
+            $data->position = trim($request->position);
+            $data->content = trim($request->content);
+            $data->star = $request->star;
+            $data->options = "{}";
+            $data->blocked = $request->blocked == 'on' ? 0 : 1;
+            $data->user_id = Auth::User()->id;
 
+            if($request->file('fileImage') && $request->hasFile('fileImage'))
+            {
+                $file = $request->file('fileImage');
+                $destinationPath = path_storage('avata');
+                $old_img = $data->thumbnail;
+                if(isset($file)){
+                    $file_name = time().randomString().'.'.$file->getClientOriginalExtension();
+                    $file->move($destinationPath, $file_name);
+                    $data->thumbnail = $destinationPath.'/'.$file_name;
+                    if(isset($old_img))
+                    {
+                        delete_image_no_path($old_img);
+                    }
+                }
+            }
+
+            $data->save();
             DB::commit();
-            return redirect()->route('get.dashboard.feeback.list')->with(['flash_message'=>'Created success']);
+            return redirect()->route('get.dashboard.feedback.list')->with(['flash_message'=>'Add feedback success']);
         }
         catch (\Exception $e) 
         {

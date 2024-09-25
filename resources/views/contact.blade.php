@@ -25,6 +25,7 @@
                 </div>
             </div>
             <!--================= Breadcrumbs Section End Here =================-->
+            <?php $about = App\Models\Pages::where('name','about')->get(); ?>
             <div id="react-contact" class="react-contact-page pt---100">
                 <div class="container">
                     <div class="row pb---96">
@@ -32,13 +33,12 @@
                             <ul class="address-sec">
                                 <li>
                                     <em class="icon"><img src="{{ URL::asset('build/images/contact/2.png') }}" alt="image"></em>
-                                    <span class="text"><em>Address</em> 1800 Abbot Kinney Blvd. Unit D<br> & E
-                                        Venice</span>
+                                    <span class="text"><em>Address</em> {{$about[0]->c4}}</span>
                                 </li>
                                 <li>
                                     <em class="icon"><img src="{{ URL::asset('build/images/contact/3.png') }}" alt="image"></em>
-                                    <span class="text"><em>Contact</em> <a href="javascript:void(0);">Mobile: (+88) - 1990 - 6886</a>
-                                        <a href="javascript:void(0);">Mail: contact@echooling.com</a></span>
+                                    <span class="text"><em>Contact</em> <a href="javascript:void(0);">Mobile: {{$about[0]->c6}}</a>
+                                        <a href="javascript:void(0);">Mail: {{$about[0]->c5}}</a></span>
                                 </li>
                                 <li>
                                     <em class="icon"><img src="{{ URL::asset('build/images/contact/4.png') }}" alt="image"></em>
@@ -104,22 +104,6 @@
                             <!--================= Form Section End Here =================-->
                         </div>
                     </div>
-
-                    <div class="row pb---110">
-                        <div class="col-lg-12">
-                            <!--=================  Map Section Start Here =================-->
-                            <div class="react-contacts pt-106">
-                                <div class="react-image-maping">
-                                    <img src="{{ URL::asset('build/images/contact/1.jpg') }}" alt="Map">
-                                    <div class="react-ripple react-tooltip1">
-                                        <div class="box"><span>New York</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--================= Map Section End Here =================-->
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
